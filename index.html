@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html lang= "en-US">
+<html lang= "en">
     <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" type="text/css" href="Assets/CSS/Reset.css">
-       <link href="style.css" rel="stylesheet" >
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <link href="./Assets/style.css" rel="stylesheet">
+       <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
        <title>Coding Challenge</title>
     </head>
     <body>
-        <div> 
-            row
+        <div class= "row">
+            <div class = "col highScore">
+                <p>High Scores</p>
+            </div>
+            <div class = "col timer">
+                <p id="timer">Timer: </p>
+            </div>   
         </div>
-        <div>
-            <h1>Welcome to the Coding Challenge Quiz!</h1>
-            <p></p>
+        <div class= "row" style= "margin-top: 100px;">
+           <div class= "container">
+                <h1>Welcome to the Coding Challenge Quiz!</h1>
+                <p>You are about to go up against clock and those before you.  Click 'Start' and begin answering these code related questions.  Answer correctly and move to the next but an incorrect answer will cost you additional time on the clock.  Good Luck!</p>
+                <center>
+                    <button type="button" class="btn btn-outline-primary text-center" id="start">
+                        Start Quiz
+                    </button>
+                </center>
+            </div> 
         </div>
+        <script src= "quiz.js"></script>
     </body>
 </html>
