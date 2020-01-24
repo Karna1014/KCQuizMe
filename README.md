@@ -46,7 +46,7 @@ Companies often utilize assessments of various natures to determine qualities an
 
 Link to site
 
-https//:
+https://karna1014.github.io/KCQuizMe/.
 
 
 
