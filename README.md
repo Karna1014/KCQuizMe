@@ -49,9 +49,14 @@ Link to site
 https://karna1014.github.io/KCQuizMe/.
 
 
+Index Page
 
 ![Index Page](./Assets/Images/OpeningPage.png)
 
+High Score Page
+
 ![High Score Page](./Assets/Images/HighScorePage.png)
+
+No Response Triggered Message
 
 ![NR Page](Assets/Images/Non-responsiveTrigger.png)
