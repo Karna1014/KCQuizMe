@@ -9,25 +9,203 @@
        <title>Coding Challenge</title>
     </head>
     <body>
-        <div class= "row">
-            <div class = "col highScore">
-                <p>High Scores</p>
-            </div>
+      <div class= "row">
+        <div class = "col highScore">
+            <button type="button" class="btn-hs text-center" onclick='location.href = "hs.html";'>
+                High Scores    
+            </button>
+        </div>
             <div class = "col timer">
-                <p id="timer">Timer: </p>
+                <p id="timer">Timer: 0:00 sec</p>
             </div>   
         </div>
         <div class= "row" style= "margin-top: 100px;">
-           <div class= "container">
+           <div class= "container" id="openingMenu">
                 <h1>Welcome to the Coding Challenge Quiz!</h1>
-                <p>You are about to go up against clock and those before you.  Click 'Start' and begin answering these code related questions.  Answer correctly and move to the next but an incorrect answer will cost you additional time on the clock.  Good Luck!</p>
+                <div class="input-group input-group-sm mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup">Enter Initials</span>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup" id="nameBox">
+                </div>
+                <p>You are about to go up against clock and those before you.  Click 'Start' and begin answering these code related questions.  Answer correctly and move to the next but an incorrect answer will cost you additional 10 secs on the clock.  Good Luck!</p>
                 <center>
-                    <button type="button" class="btn btn-outline-primary text-center" id="start">
+                    <button type="button" class="btn-ctr text-center" id="start">
                         Start Quiz
                     </button>
                 </center>
             </div> 
         </div>
-        <script src= "quiz.js"></script>
+
+  <!-- <div class= "questionGroup"> -->
+        <div class=container id=firstOpt> 
+          <form data-question-id="question1">
+            <div class="form-?1 row" id= "challengeOne">
+              <div class="col-md-12">
+                <input type="text" class="form-control-plaintext" id="firstQuestion" value="1)  The condition in an if/else statement is enclosed w/in?">
+              </div>
+            </div>
+            <div class="form-?1 row">
+              <div class="col-md-10 text-danger" id= "nr1" style= "display: none;">
+                <p>Please Choose an Answer!</p>
+              </div>
+              <div class="col-sm-10" id= "answers1">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="Quotes">
+                  <label class="custom-control-label" for="customRadio1">Quotes</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="Curly Brackets">
+                  <label class="custom-control-label" for="customRadio2">Curly Brackets</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="Parentheses">
+                  <label class="custom-control-label" for="customRadio3">Parentheses</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" value="Square Brackets">
+                  <label class="custom-control-label" for="customRadio4">Square Brackets</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <input type="submit" id= "commit1" value="Next">
+        </div>
+        <div class=container id=secondOpt> 
+          <form data-question-id="question2">
+            <div class="form-?2 row" id= "challengeTwo">
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="secondQuestion" value="2)  The 'entry-way' to every Web Application is?"> 
+              </div>
+            </div>
+            <div class="form-?2 row">
+              <div class="col-sm-10 text-danger" id= "nr2" style= "display: none;">
+                <p>Please Choose an Answer!</p>
+              </div>
+              <div class="col-sm-10" id= "answers2">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio5" name="customRadio2" class="custom-control-input" value="ReadMe.md">
+                  <label class="custom-control-label" for="customRadio5">ReadMe.md</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio6" name="customRadio2" class="custom-control-input" value="Javascript.js">
+                  <label class="custom-control-label" for="customRadio6">Javascript.js</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio7" name="customRadio2" class="custom-control-input" value="Style.css">
+                  <label class="custom-control-label" for="customRadio7">Style.css</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio8" name="customRadio2" class="custom-control-input" value="Index.html">
+                  <label class="custom-control-label" for="customRadio8">Index.html</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <input type="submit" id= "commit2" value="Next">
+        </div>
+        <div class=container id=thirdOpt>   
+          <form data-question-id="question3">
+            <div class="form-?3 row" id= "challengeThree">
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="thirdQuestion" value="3)  What is a CDN?">
+              </div>
+            </div>
+            <div class="form-?3 row">
+              <div class="col-sm-10 text-danger" id= "nr3" style= "display: none;">
+                <p>Please Choose an Answer!</p>
+              </div>
+              <div class="col-sm-10" id= "answers3">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio9" name="customRadio3" class="custom-control-input" value="Content Delivery Network">
+                  <label class="custom-control-label" for="customRadio9">Content Delivery Network</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio10" name="customRadio3" class="custom-control-input" value="A system of distributed servers that deliver that deliver pages/web content to a user.">
+                  <label class="custom-control-label" for="customRadio10">A system of distributed servers that deliver that deliver pages/web content to a user.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio11" name="customRadio3" class="custom-control-input" value="Is based on location, origin of the webpage, and the content delivery server.">
+                  <label class="custom-control-label" for="customRadio11">Is based on location, origin of the webpage, and the content delivery server.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio12" name="customRadio3" class="custom-control-input" value="All of the Above">
+                  <label class="custom-control-label" for="customRadio12">All of the Above</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <input type="submit" id= "commit3" value="Next">
+        </div>
+        <div class=container id=fourthOpt>   
+          <form data-question-id="question4">
+            <div class="form-?4 row" id= "challengeFour">
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="fourthQuestion" value="4)  Which is a current complete list of data types in Javascript?">          
+              </div>
+            </div>
+            <div class="form-?4 row">
+              <div class="col-sm-10 text-danger" id= "nr4" style= "display: none;">
+                <p>Please Choose an Answer!</p>
+              </div>
+              <div class="col-sm-10" id= "answers4">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio13" name="customRadio4" class="custom-control-input" value="Boolean, String, Number">
+                  <label class="custom-control-label" for="customRadio13">Boolean, String, Number</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio14" name="customRadio4" class="custom-control-input" value="Null, Symbol, Undefined, Boolean, Number, String">
+                  <label class="custom-control-label" for="customRadio14">Null, Symbol, Undefined, Boolean, Number, String</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio15" name="customRadio4" class="custom-control-input" value="Null, Number, String">
+                  <label class="custom-control-label" for="customRadio15">Null, Number, String</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio16" name="customRadio4" class="custom-control-input" value="Boolean, String, Number, Undefined">
+                  <label class="custom-control-label" for="customRadio16">Boolean, String, Number, Undefined</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <input type="submit" id= "commit4" value="Next">
+        </div>
+        <div class=container id=fifthOpt> 
+          <form data-question-id="question5"> 
+            <div class="form-?5 row" id= "challengeFive">
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="fifthQuestion" value="5)  The purpose of a Web Browser is ?">
+              </div>
+            </div>
+            <div class="form-?5 row">
+              <div class="col-sm-10 text-danger" id= "nr5" style= "display: none;">
+                <p>Please Choose an Answer!</p>
+              </div>
+              <div class="col-sm-10" id="answers5">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio17" name="customRadio5" class="custom-control-input" value="To Read HTML Documents and Display Them">
+                  <label class="custom-control-label" for="customRadio17">To Read HTML Documents and Display Them</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio18" name="customRadio5" class="custom-control-input" value="To Interpret Data">
+                  <label class="custom-control-label" for="customRadio18">To Interpret Data</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio19" name="customRadio5" class="custom-control-input" value="To Log All Interactions">
+                  <label class="custom-control-label" for="customRadio19">To Log All Interactions</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio20" name="customRadio5" class="custom-control-input" value="To Connect to the Internet">
+                  <label class="custom-control-label" for="customRadio20">To Connect to the Internet</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <input type="submit" id= "commit5" value="Done">
+        </div>  
+    <script src= "quiz.js"></script>
     </body>
 </html>
+
+
+

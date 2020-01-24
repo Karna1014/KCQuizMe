@@ -1,17 +1,166 @@
-.highScore {
+
+body {
+    height: 100vh;
+    padding: 32px;
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+}
+
+
+#hs {
     float: left;
+    width: 100px;
+    padding: 20px;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
 }
 
 #timer {
     float: right;
-}
+    Padding: 20px;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    }
 
-h1 {
-    text-align: center;
+#h1 {
+    padding: 10px;
 }
-
+#start {
+    padding: 5px;  
+}
 
 .container {
     width: 500px;
-    height: 300px;
+    height: auto;
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#inputGroup {
+    background-color: blueviolet;
+    opacity: 1;
+    color: black;
+}
+
+#firstquestion.form-control-plaintext {
+    height: 60px;
+}
+
+#firstOpt {
+    width: 500px;
+    height: 275px;
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    text-align: left;
+    display: none;
+}
+
+#challengeOne {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#answer1 {
+    text-align: center;
+}
+
+#secondOpt {
+    width: 500px;
+    height: 260px;
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    text-align: left;
+    display: none;
+}
+
+#challengeTwo {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+#thirdOpt {
+    width: 500px;
+    height: 275px;
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    text-align: left;
+    display: none;
+}
+
+#challengeThree {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+#fourthOpt {
+    width: 500px;
+    height: 275px;
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    text-align: left;
+    display: none;
+}
+
+#challengeFour {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+#fifthOpt {
+    width: 500px;
+    height: 275px;
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    text-align: left;
+    display: none;
+}
+
+#challengeFive {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+#commit1, #commit2, #commit3, #commit4, #commit5 {
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    float: right;
+    
+}
+
+#commit1:hover, #commit2:hover, #commit3:hover, #commit4:hover, #commit5:hover {
+    background-color: #d9a3f1;
+}
+
+.btn-ctr, .btn-ctr:active, .btn-ctr:visited {
+    border: 2px solid blueviolet;
+    color: black;
+    border-radius: 20px;
+}
+
+.btn-ctr:hover {
+    background-color: #d9a3f1;
+    border: 2px solid blueviolet;
+}
+
+#hspage {
+    margin-top: 100px;
+    text-align: left;
+    overflow-y: auto;
+    scroll-padding-right: 10px;
+}
+
+.btn-hs, .btn-hs:active, .btn-hs:visited {
+    border: 2px solid blueviolet;
+    color: black;
+    border-radius: 20px;
+    height: 60px;
+}
+
+.btn-hs:hover {
+    background-color: #d9a3f1;
+    border: 2px solid blueviolet;
 }
