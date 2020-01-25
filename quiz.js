@@ -19,7 +19,7 @@ var timerTest = null;
 var name = null;
 var numberCorrect = 0;
 
-var count=5;
+var count=80;
 
 var ansArr1 = ["Quotes", "Curly Brackets", "Parentheses", "Square Brackets"];
 var ansArr2 = ["ReadMe.md", "Javascript.js", "Style.css", "Index.html"];

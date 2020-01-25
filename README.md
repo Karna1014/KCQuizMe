@@ -1,5 +1,5 @@
 # KCQuizMe
-Coding Quiz Challenge
+## Coding Quiz Challenge
 
 **Description:**
 
@@ -13,7 +13,7 @@ An example of a coding assessment with an timer.  As a student, it allows me to 
 6. Each players info logged to High score page based on rating High -> Low.
 
 
-Usage:
+**Usage:**
 Companies often utilize assessments of various natures to determine qualities and attributes of potential candidates that they may want or that they may feel will be a good match with their current environment.
 
 
@@ -44,19 +44,19 @@ Companies often utilize assessments of various natures to determine qualities an
      Compressed set of CSS rules that resets the styling of all HTML elements to a consistent baseline.
 
 
-Link to site
+### Link to site
 
 https://karna1014.github.io/KCQuizMe/.
 
 
-Index Page
+### Index Page
 
 ![Index Page](./Assets/Images/OpeningPage.png)
 
-High Score Page
+### High Score Page
 
 ![High Score Page](./Assets/Images/HighScorePage.png)
 
-No Response Triggered Message
+### No Response Triggered Message
 
 ![NR Page](Assets/Images/Non-responsiveTrigger.png)
